@@ -1,0 +1,36 @@
+.jumbotron{
+    margin: 0;
+}
+.img_me{    
+    background-image: url('assets/image/1.jpg');
+    color: white;
+    font-weight: bold;
+}
+.img_bg{
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.img_content{
+    background-image: url('assets/image/2.jpg');
+    color: white;
+    font-weight: bold;
+}
+.img_content_2{
+    background-image: url('assets/image/3.jpg');
+    color: white;
+    font-weight: bold;
+}
+@media (max-width: 767.98px){
+    .header{
+        display: none;
+    }
+}
