@@ -1,46 +1,110 @@
-body, html {
-  height: 100%;
-  margin: 0;
+ul{
+  list-style: none;
 }
-.header_navbar{
-  background: gray;
+.header{
+  padding: 0px 30px 0px 30px;
 }
-.header_navbar a{
+.header a{
+  text-transform: uppercase;
+  color: gray;
+}
+.header .nav-item{
+  padding: 30px 15px;
+}
+.banner{
+  background: url('assets/image/wallpaper.jpeg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  height: 558px;
+  padding: 105px 75px;
+}
+.banner *{
   color: white;
 }
-
-.wallpaper h1{
-  color: black;
+.padding_content{
+  padding: 0px 30px 0px 30px;
 }
-.wallpaper p{
-  color: gray;
+
+.contents{
+  padding-top: 30px;
+  background: #cccccc
+}
+
+.card_content{
+  color: white;
+  width: 100%;
+  /* ratio */
+  padding-top: 56.25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+
+}
+.card_tokyo{
+  background: url('assets/image/tokyo.jpeg') center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.card_mexico{
+  background: url('assets/image/mexico.jpeg') center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.card_newyork{
+  background: url('assets/image/new_york.jpeg') center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.card_paris{
+  background: url('assets/image/paris.jpeg') center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.card_invite{
+  background: url('assets/image/invitefr.jpeg') center;
+  background-repeat: no-repeat;  
+  background-size: auto;
+}
+.card_tittle{
+  position: absolute;
+  top: 40%;
+  left: 30%;
 }
 
 /* CUSTOM RESPONSIVE */
-@media (min-width: 992px){ 
-  .header_navbar{
-    background: white;
+@media (max-width: 991.98px) {
+  .header{
+    background: gray;
   }
-  .header_navbar a{
-    color: gray;
-  }
-  .wallpaper{
-    background-image: url('assets/image/wallpaper.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50%;
-    background-size: cover;
-  }
-  .wallpaper h1, .wallpaper p{
+  .header a{
     color: white;
   }
-}
-
-@media (max-width: 991.98px) {
-
+  .banner{
+    margin-top: 30px;
+    background: none;
+    height: auto;
+    border-bottom: 1px solid gray;
+  }
+  .banner p{
+    margin-bottom: 50px;
+  }
+  .banner *{
+    color: black;
+  }
+  .padding_content{
+    padding: 0px 30px 0px 30px;
+  }
+  .contents{
+    padding-top: 30px;
+    background: none;
+  }
 }
 
 
 @media (max-width: 767.98px){
-
+  .md-display{
+    display: none;
+  }
 }
